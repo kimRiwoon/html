@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 기초</title>
+    <style>
+        * {
+            color: red
+        }
+
+        p {
+            color: blue
+        }
+
+        #blk {
+            color: black;
+            font-size: 32px;
+
+        }
+
+        .c603 {
+            color: green
+        }
+
+        div {
+
+            background-color: beige
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>css 기초, 우선순위</h1>
+    <!-- h1이 빨간색인 이유는 "*" 전체 색깔을 지정하는 표시이다.-->
+    <p class="c603">안녕하세요 폰트 색을 바꿔볼까요?</p>
+    <div class="c603">폰트를 바꿔볼까요?</div>
+    <div class="c603" id="blk">이건 그냥써볼게요</div>
+    <div>이제 마칠게요</div>
+    <p>외로운 p</p>
+
+    <!--  *<일반태그<클래스<아이디 (아이디부터 우선순위이다.)-->
+</body></html>

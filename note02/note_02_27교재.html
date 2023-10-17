@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>교제P.201</title>
+    <!--CSS에서는 띄어쓰기는 자식요소를 의미, 띄어쓰기를 사용 할 경우 p :fist-child를 쓰게되면 p태그의 자식 요소 중 첫번째 요소를 가리키므로 주의해야한다.   -->
+    <style>
+        p:last-child {
+            color: lime;
+            background-color: black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>:last-child가 아닙니다.</p>
+        <p>:last-child입니다.</p>
+    </div>
+    <div>
+        <p>:last-child가 아닙니다.</p>
+        <h2>p 태그가 아니라 선택되지 않습니다.</h2>
+
+    </div>
+</body></html>

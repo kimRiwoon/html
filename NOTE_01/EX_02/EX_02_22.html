@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구조적가상클래스</title>
+    <style>
+        p:first-child {
+            color: blue
+        }
+
+        p:first-child:after {
+            content: "유성";
+            color: crimson
+        }
+
+        p:before {
+            content: "🙌⭐"
+        }
+
+        p:nth-child(2) {
+            color: brown;
+            background-color: burlywood;
+            display: inline
+        }
+        p:nth-last-child(4):after{
+            
+            content:"🙌" }
+        
+        p:nth-last-of-type(2):after{
+            content: "메로나"
+        }
+        p:last-child:after{
+            content: ".감사합니다^^⭐"
+            
+        }
+    </style>
+</head>
+
+<body>
+    <p>나의사랑</p>
+    <p>나의취업</p>
+    <p>행복미래</p>
+    <span>------절취선------</span>
+    <p>올때</p>
+    <p>이제끝</p>
+</body></html>

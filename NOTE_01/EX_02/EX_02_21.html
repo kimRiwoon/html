@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 영화카드만들기</title>
+    <style>
+        .contain{
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap
+        }
+        .card{
+            margin: auto;
+            border: 1px solid rgba(0,0,0,0.4);
+            width: 210px;
+            height: 200px;
+        }
+        .imgs{
+            background-image: url("https://www.hanhodaily.com/news/photo/201605/47887_6999_1351.jpg");
+            background-color: beige;
+            background-size: contain;
+            height: 65%;
+            
+        }
+        img{
+            width: 100%;
+            height: 65%;
+            object-fit: contain;
+        }
+        .card>div{
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="card">
+            <div class="imgs">img1</div>
+            <div>X-MEN 1영화관</div>
+        </div>
+        <div class="card">
+            <div class="imgs">img2</div>
+            <div>X-MEN 2영화관</div>
+        </div>
+        <div class="card">
+            <img src="/img/images2.jfif" alt="img3">
+            <div>UNDERWORLD 3영화관</div>
+        </div>
+        <div class="card">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlM2dc14DCYNFl39z79-3u3EnXUshqtSoQCg&usqp=CAU" alt="img4">
+            <div>결백 4영화관</div>    
+        </div>
+    </div>
+</body>
+</html>

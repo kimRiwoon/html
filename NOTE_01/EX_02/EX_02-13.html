@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     /*    [type="text"]{ 속성이 type="만 잡아냄*/
+        /*    [ class]  "test" 단독!으로 되어 있는 것만 잡아냄 /*       p[class~="test"] .test { "test" 단독!으로 되어 있는 것만 잡아냄*/
+        */ 
+        
+/*        p[class|="test"] 하나의 단어로 시작하는 요소를 모두 선택 */
+   /* [class^="test"]* 특정문자열로 끛나는 요소를 모두 선택/
+    <meta charset="UTF-8">
+    <title>형제선택자</title>
+    <style>
+        h1~p {
+
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>형제선택자</h1>
+        <p>10월의 여행지</p>
+        <p>11월의 여행지</p>
+        <ul>
+            <li>
+                <p>1주자여행지</p>
+            </li>
+
+
+            <li>
+                <p>2주자여행지</p>
+            </li>
+
+        </ul>
+        <p>12월의 여행지</p>
+    </div>
+
+    <p>내년의 여행지</p>
+
+</body></html>

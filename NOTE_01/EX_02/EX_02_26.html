@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>햄버거 형태잡기2</title>
+    <style>
+          :root {
+            --hamburger-bg: black;
+        }
+
+        .hamburger-container {
+            width: 100px;
+            height: 100px;
+            background: var(--hamburger-bg);
+
+        }
+
+        .hamburger {
+            width: 100px;
+            height: 10px;
+            background: white;
+
+        }
+
+        .hamburger::before,
+        .hamburger::after {
+
+            content: "";
+        }
+
+   
+        .hamburger-container {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: var(--hamburger-bg);
+
+        }
+
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after {
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            background: white;
+        }
+
+        .hamburger::before, 
+        .hamburger:after{
+            content: "";
+            
+        }
+        
+        .hamburger{
+            top:50%;
+        }
+        .hamburger::before{
+            top:-30px;
+            
+        }
+        .hamburger:after{
+            top:30px;
+        }
+    </style>
+</head>
+
+<body>
+ <label for="">
+    <span class="hamburger-title">My hamburger</span>
+    <div class="hamburger-container">
+        <input type="checkbox" class="toggle" >
+        <div class="hamburger"></div>
+    </div>
+</label>
+   
+
+</body></html>
